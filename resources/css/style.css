@@ -1,0 +1,63 @@
+/* General */
+
+html {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* Header */
+
+header {
+  display: flex;
+}
+
+header {
+  height: 64px;
+  width: 100%;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  flex-grow: 1;
+}
+
+.logo img {
+  padding-top: 4px;
+  height: 45px;
+  width: 45px;
+}
+
+.logo span {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #a9a9a9;
+  letter-spacing: .1em;
+}
+
+.logo span.bold {
+  font-weight: bold;
+  color: black;
+}
+
+/* Navigation */
+
+nav {
+  display: flex;
+  align-items: center;
+  padding-right: 24px;
+}
+
+nav.main li {
+  display: inline;
+  padding: 8px;
+
+}
