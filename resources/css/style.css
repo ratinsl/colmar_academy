@@ -1,26 +1,53 @@
 /* General */
-
 html {
   font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #444444;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 2.65rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: .03rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.65rem;
+  letter-spacing: .1rem;
+}
+
+.caption {
+  font-size: .75rem;
+}
+
+p {
+  font-size: .95rem;
+  letter-spacing: .04rem;
+  line-height: 1.5rem;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
-
-
 
 /* Header */
-
 header {
   display: flex;
-}
-
-header {
-  height: 64px;
+  height: 4rem;
   width: 100%;
   border-bottom: 1px solid #c7c7c7;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  z-index: 1;
 }
 
 .logo {
@@ -31,9 +58,8 @@ header {
 }
 
 .logo img {
-  padding-top: 4px;
   height: 45px;
-  width: 45px;
+  width: auto;
 }
 
 .logo span {
@@ -49,7 +75,6 @@ header {
 }
 
 /* Navigation */
-
 nav {
   display: flex;
   align-items: center;
@@ -59,5 +84,84 @@ nav {
 nav.main li {
   display: inline;
   padding: 8px;
+}
 
+/* Navigation Animations */
+nav.main li a:hover {
+  transition: color 300ms linear;
+  color: red;
+}
+
+nav.main li a:not(:hover) {
+  transition: color 500ms linear;
+}
+
+/* Banner */
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container.banner {
+  background-color: #dedede;
+  margin-top: 64px;
+}
+
+.main-image {
+  width: 60%;
+  height: auto;
+  padding: 32px 24px;
+}
+
+.main-image img {
+  width: 100%;
+}
+
+.info.banner {
+  width: 30%;
+  padding-left: 24px;
+}
+
+.info.banner h1 {
+  padding-bottom: 30px;
+}
+
+.info.banner h3 {
+  padding-bottom: 50px;
+}
+
+.button {
+  width: 80%;
+  background-color: #444444;
+  padding: 14px 0px;
+  color: white;
+  text-align: center;
+  letter-spacing: .08em;
+}
+
+.button a {
+  color: #FFF;
+}
+
+.button:hover {
+  transition: background-color 200ms linear;
+  background-color: red;
+  cursor: pointer;
+}
+
+.button:not(:hover) {
+  transition: background-color 200ms linear;
+}
+
+/* Information */
+.container.info h2 {
+  padding: 32px 0px 24px 0px;
+}
+
+.container.info p {
+  padding-bottom: 32px;
+}
+
+.container.info .main-image {
+  border-right: 1px solid #dedede;
 }
