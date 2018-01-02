@@ -20,7 +20,7 @@ h2 {
 h3 {
   font-size: 1.25rem;
   line-height: 1.65rem;
-  letter-spacing: .1rem;
+  letter-spacing: .04rem;
 }
 
 .caption {
@@ -143,6 +143,7 @@ nav.main li a:not(:hover) {
   color: #FFF;
 }
 
+/* Button Animations*/
 .button:hover {
   transition: background-color 200ms linear;
   background-color: red;
@@ -154,14 +155,54 @@ nav.main li a:not(:hover) {
 }
 
 /* Information */
-.container.info h2 {
+.info {
+  width: 40%;
+}
+
+.container.articles h2 {
   padding: 32px 0px 24px 0px;
 }
 
-.container.info p {
+.container.articles p {
   padding-bottom: 32px;
 }
 
-.container.info .main-image {
+.container.articles .main-image {
   border-right: 1px solid #dedede;
+}
+
+.article {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #dedede;
+}
+
+.article img {
+  width: 35%;
+  height: auto;
+  padding-right: 24px;
+  padding-left: 16px;
+}
+
+.article.two img,
+.article.three img {
+  padding-top: 16px;
+}
+
+.article.three {
+  background-color: #dedede;
+}
+
+.text-area {
+  width: 65%;
+}
+
+.text-area p.link a {
+  padding-bottom: 0px;
+  color: #70bce0;
+}
+
+.article .text-area p {
+  padding-bottom: 0px;
 }
