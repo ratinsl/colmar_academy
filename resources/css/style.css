@@ -1,4 +1,4 @@
-/* General */
+/* -- General -- */
 html {
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -36,9 +36,10 @@ p {
 a {
   text-decoration: none;
   color: #000000;
+  cursor: pointer;
 }
 
-/* Header */
+/* -- Header -- */
 header {
   display: flex;
   height: 4rem;
@@ -74,7 +75,7 @@ header {
   color: black;
 }
 
-/* Navigation */
+/* -- Navigation -- */
 nav {
   display: flex;
   align-items: center;
@@ -86,7 +87,7 @@ nav.main li {
   padding: 8px;
 }
 
-/* Navigation Animations */
+/* -- Navigation Animations -- */
 nav.main li a:hover {
   transition: color 300ms linear;
   color: red;
@@ -96,7 +97,7 @@ nav.main li a:not(:hover) {
   transition: color 500ms linear;
 }
 
-/* Banner */
+/* -- Banner -- */
 .container {
   display: flex;
   background-color: #FFF;
@@ -157,7 +158,7 @@ nav.main li a:not(:hover) {
   color: #FFF;
 }
 
-/* Button Animations*/
+/* -- Button Animations -- */
 .button:hover {
   transition: background-color 200ms linear;
   background-color: red;
@@ -168,7 +169,7 @@ nav.main li a:not(:hover) {
   transition: background-color 200ms linear;
 }
 
-/* Information */
+/* -- Information -- */
 .col-two {
   width: 40%;
   padding-top: 32px;
@@ -225,7 +226,7 @@ nav.main li a:not(:hover) {
   padding-bottom: 0px;
 }
 
-/* Learning */
+/* -- Learning -- */
 .container.learning,
 .container.thesis {
   flex-direction: column;
@@ -262,4 +263,52 @@ nav.main li a:not(:hover) {
   padding-bottom: 8px;
 }
 
-/* Thesis */
+/* -- Thesis -- */
+.container.thesis .col-one {
+  border-right: 0px;
+}
+
+.container.thesis .article.two {
+  border-bottom: 0px;
+}
+
+.container.thesis .col-one h3 {
+  padding-top: 24px;
+}
+
+.container.thesis .container.articles p {
+  padding-bottom: 0px;
+}
+
+/* -- Footer -- */
+footer {
+  display: inline-flex;
+  width: 100%;
+  padding: 16px 0;
+  background-color: #FFF;
+  border-top: 1px solid #dedede
+}
+
+footer span {
+  padding-left: 24px;
+  flex-grow: 1;
+}
+
+footer .footer-nav li {
+  display: inline-flex;
+  padding: 0px 6px;
+}
+
+footer .footer-nav {
+  padding-right: 24px;
+}
+
+/* -- Footer Animations -- */
+.footer-nav li a:hover {
+  transition: color 200ms linear;
+  color: red;
+}
+
+.footer-nav li a:not(:hover) {
+  transition: color 200ms linear;
+}
