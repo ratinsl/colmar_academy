@@ -44,7 +44,7 @@ header {
   display: flex;
   height: 4rem;
   width: 100%;
-  border-bottom: 1px solid #c7c7c7;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .1);
   position: fixed;
   background-color: white;
   top: 0;
@@ -110,7 +110,7 @@ nav.main li a:not(:hover) {
 
 .container.banner,
 .container.learning {
-  background-color: #dedede;
+  background-color: #e6e6e6;
   align-items: center;
 }
 
@@ -184,13 +184,13 @@ nav.main li a:not(:hover) {
 }
 
 .container.articles .col-one {
-  border-right: 1px solid #dedede;
+  border-right: 1px solid #e6e6e6;
 }
 
 .article {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .article img {
@@ -205,7 +205,7 @@ nav.main li a:not(:hover) {
 }
 
 .article.three {
-  background-color: #dedede;
+  background-color: #e6e6e6;
 }
 
 .text-area {
@@ -246,6 +246,7 @@ nav.main li a:not(:hover) {
 
 .course {
   background-color: #FFF;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .1);
   width: 29%;
   margin: 16px;
 }
@@ -280,13 +281,17 @@ nav.main li a:not(:hover) {
   padding-bottom: 0px;
 }
 
+.container.thesis h2 {
+  padding-top: 32px;
+}
+
 /* -- Footer -- */
 footer {
   display: inline-flex;
   width: 100%;
-  padding: 16px 0;
+  padding: 16px 0 40px 0;
   background-color: #FFF;
-  border-top: 1px solid #dedede
+  border-top: 1px solid #e6e6e6
 }
 
 footer span {
@@ -312,3 +317,5 @@ footer .footer-nav {
 .footer-nav li a:not(:hover) {
   transition: color 200ms linear;
 }
+
+/* -- Media Queries -- */
