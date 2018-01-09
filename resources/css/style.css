@@ -1,26 +1,64 @@
+/* Fonts */
+/* Light 300 */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* Normal 400 */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* Medium 500 */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* Bold 700 */
+  @font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
 /* -- General -- */
 html {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
-  color: #444444;
+  color: #4a4a4a;
 }
 
 h1 {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 2.85rem;
+  color: #4a4a4a;
 }
 
 h2 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: .03rem;
+  color: #4a4a4a;
 }
 
 h3 {
   font-size: 1.4rem;
   line-height: 2rem;
   letter-spacing: .04rem;
+  font-weight: 500;
+  color: #4a4a4a;
 }
 
 .caption {
@@ -31,6 +69,7 @@ p {
   font-size: .95rem;
   letter-spacing: .04rem;
   line-height: 1.5rem;
+  font-weight: 300;
 }
 
 a {
@@ -85,6 +124,7 @@ nav {
 nav.main li {
   display: inline;
   padding: 8px;
+  font-weight: 400;
 }
 
 nav.mobile {
@@ -114,7 +154,7 @@ nav.main li a:not(:hover) {
 
 .container.banner,
 .container.learning {
-  background-color: #e6e6e6;
+  background-color: #e0e9f1;
   align-items: center;
 }
 
@@ -138,6 +178,7 @@ nav.main li a:not(:hover) {
 
 .col-two.banner h3 {
   padding-bottom: 40px;
+  font-weight: 400;
 }
 
 .col-two.banner {
@@ -213,7 +254,7 @@ nav.main li a:not(:hover) {
 }
 
 .article.three {
-  background-color: #e6e6e6;
+  background-color: #ececec;
 }
 
 .text-area {
@@ -224,6 +265,15 @@ nav.main li a:not(:hover) {
 .text-area p.link a {
   padding-bottom: 0px;
   color: #70bce0;
+}
+
+.text-area p.link a:hover {
+  transition: color 200ms ease-in;
+  color: red;
+}
+
+.text-area p.link a:not(:hover) {
+  transition: color 200ms ease-in;
 }
 
 .article .text-area p, h3 {
@@ -276,6 +326,13 @@ nav.main li a:not(:hover) {
   padding-bottom: 8px;
 }
 
+.course .course-text p.course-name {
+  font-weight: 400;
+  letter-spacing: .12em;
+  font-size: .9em;
+  color: red;
+}
+
 /* -- Thesis -- */
 .container.thesis .col-one {
   border-right: 0px;
@@ -301,8 +358,8 @@ nav.main li a:not(:hover) {
 footer {
   display: inline-flex;
   width: 100%;
-  padding: 16px 0 40px 0;
-  background-color: #FFF;
+  padding: 32px 0;
+  background-color: #ececec;
   border-top: 1px solid #e6e6e6
 }
 
@@ -432,6 +489,31 @@ footer .footer-nav {
   .col-two.banner h3 {
     padding-bottom: 26px;
   }
+
+  /* Information */
+  .container.articles {
+    flex-direction: column;
+    margin: 8px 0;
+  }
+
+  .container .col-one p,
+  .container .col-one h2,
+  .container .col-one h3,
+  .container .col-one .caption {
+    padding-left: 16px;
+  }
+
+  .article.one {
+    border-top: 1px solid #dedede;
+    padding-top:16px;
+  }
+
+  /* Thesis */
+  .container.thesis h2 {
+    padding-bottom: 32px;
+
+  }
+
 }
 
 /* Phone */
@@ -514,6 +596,10 @@ footer .footer-nav {
     display: none;
   }
 
+  .container.articles {
+    margin: 0;
+  }
+
   .article img.mobile-article {
     display: block;
     width: 100%;
@@ -570,7 +656,7 @@ footer .footer-nav {
 
   .course.mobile {
     display: block;
-    background-color: #e6e6e6;
+    background-color: #e0e9f1;
     width: 100%;
     box-shadow: none;
   }
