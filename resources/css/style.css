@@ -366,6 +366,7 @@ nav.main li a:not(:hover) {
 /* -- Footer -- */
 footer {
   display: inline-flex;
+  align-items: center;
   width: 100%;
   padding: 32px 0;
   background-color: #ececec;
@@ -380,6 +381,23 @@ footer span {
 footer .footer-nav li {
   display: inline-flex;
   padding: 0px 6px;
+}
+
+footer .social i {
+  padding-right: 8px;
+}
+
+footer .social i:hover {
+  transition: color 200ms ease-in;
+  color: red;
+}
+
+footer .social i:not(:hover) {
+  transition: color 200ms ease-in;
+}
+
+footer .social {
+  padding-right: 16px;
 }
 
 footer .footer-nav {
@@ -711,7 +729,6 @@ footer .footer-nav {
   /* Footer */
   footer {
     padding: 32px 0px;
-    text-align: center;
   }
 
   .footer-nav.caption {
@@ -719,6 +736,6 @@ footer .footer-nav {
   }
 
   footer span {
-    padding-left: 0px;
+    padding-left: 24px;
   }
 }
