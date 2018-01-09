@@ -74,7 +74,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #444444;
   cursor: pointer;
 }
 
@@ -309,6 +309,15 @@ nav.main li a:not(:hover) {
   margin: 16px;
 }
 
+.course:hover {
+  transition: box-shadow 200ms ease-in;
+  box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, .1);
+}
+
+.course:not(:hover) {
+  transition: box-shadow 200ms ease-in;}
+
+
 .course.mobile {
   display: none;
 }
@@ -403,11 +412,11 @@ footer .footer-nav {
 @media only screen and (max-width:1024px) {
 
   h1 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
   h3 {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 
   .course-area {
@@ -421,14 +430,6 @@ footer .footer-nav {
 
 /* Tablet Portrait */
 @media only screen and (max-width:768px) {
-
-  h1 {
-    font-size: 2em;
-  }
-
-  h3 {
-    font-size: 1.2em;
-  }
 
   /* Navigation */
   .logo {
